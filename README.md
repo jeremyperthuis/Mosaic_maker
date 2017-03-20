@@ -1,6 +1,5 @@
 
 ***************************************************************
- Mosaic_maker
 
 Mosaic_maker permet de creer une mosaique à partir de plusieurs images sources.
 
