@@ -15,12 +15,11 @@ path = raw_input("Saisir le chemin du dossier d'images : ")
 imgliste= os.listdir(path)
 print "\n\n>>> Nombre de fichiers trouves : "+str(len(imgliste))
 
-TestDimensionImages(path,imgliste)	
-
+src = TestDimensionImages(path,imgliste)	
 
 grid = Choix_Proportions(imgliste)
 
-new_image = Image.new('RGB', (int(grid[0])*70, int(grid[1])*70))
+new_image = Image.new('RGB', (int(grid[0])*src[0], int(grid[1])*src[1]))
 
 x=0
 y=0
@@ -30,10 +29,10 @@ for file in imgliste :
 	image_courrante= Image.open(adr)
 	print adr
 	new_image.paste(image_courrante,(x,y))
-	x+=70
-	if x == grid[0]*70 :
+	x+=src[0]
+	if x == grid[0]*src[0] :
 		x = 0
-		y +=70
+		y +=src[1]
 
 nom = raw_input("Saisir un nom pour sauvegarder l'image : ")+".jpg"	
 new_image.save(nom)
