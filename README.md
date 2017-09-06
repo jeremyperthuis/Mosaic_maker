@@ -1,13 +1,12 @@
 
-***************************************************************
+**Mosaic_maker** 
+================
 
-Mosaic_maker permet de creer une mosaique à partir de plusieurs images sources.
+**Script generant une mosaique à partir d'images source**
 
-Il a été conçu comme une alternative simplifiée du module d'automatisation "Planche contact II" de Photoshop CS6, et se distingue 
-de ce dernier par la possibilité de coller les images sources sans espacement entre elles, et par sa rapidité même pour un 
-large nombre d'images à traiter.
+### Pourquoi ?
+  
+Il permet de traiter un grand nombre nombre d'images rapidement.(Les scripts photoshop sont très lents)
+Ce script s'appuie sur un dossier d'images choisis par l'utilisateur. Les images sources doivent être traitées afin que leur
+dimensions soient identiques (idéalement).
 
-Ce programme nécessite un dossier d'images choisis par l'utilisateur. Les images sources doivent être pré-traitées afin que leur
-dimensions soient idealement identiques.
-
-***************************************************************
