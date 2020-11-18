@@ -11,9 +11,9 @@ print"    |  | |__| ___] |  | | |___    |  | |  | | \_ |___ |  \  v 1.0\n\n"
 print"******************************************************************\n"
 
 
-path = raw_input("Saisir le chemin du dossier d'images : ")
+path = raw_input("Enter images path : ")
 imgliste= os.listdir(path)
-print "\n\n>>> Nombre de fichiers trouves : "+str(len(imgliste))
+print "\n\n>>> file found : "+str(len(imgliste))
 
 src = TestDimensionImages(path,imgliste)	
 
@@ -34,6 +34,6 @@ for file in imgliste :
 		x = 0
 		y +=src[1]
 
-nom = raw_input("Saisir un nom pour sauvegarder l'image : ")+".jpg"	
+nom = raw_input("Enter a name : ")+".jpg"	
 new_image.save(nom)
-print ("\nImage Sauvegardee !")
+print ("\nSaved image !")
